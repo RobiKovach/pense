@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pense</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header container">
+        <a href="#" class="link-logo">
+            <svg class="header-logo" width="112" height="40" viewBox="0 0 112 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#FF7235"/>
+                <path d="M18.176 26H14.384L18.728 19.904L14.648 13.832H18.536L20.504 17.456L22.688 13.832H26.528L22.16 19.928L26.216 26H22.4L20.36 22.352L18.176 26Z" fill="white"/>
+                <path d="M55.841 29.462H53.587V13.339H55.841V15.133C56.6383 13.8297 57.8343 13.178 59.429 13.178C60.9623 13.178 62.1737 13.7377 63.063 14.857C63.9523 15.961 64.397 17.3717 64.397 19.089C64.397 20.8523 63.937 22.309 63.017 23.459C62.1123 24.5937 60.901 25.161 59.383 25.161C57.8343 25.161 56.6537 24.517 55.841 23.229V29.462ZM55.841 19.135C55.841 20.4843 56.1553 21.4963 56.784 22.171C57.428 22.8457 58.1563 23.183 58.969 23.183C59.8737 23.183 60.6173 22.8303 61.2 22.125C61.7827 21.4043 62.074 20.4 62.074 19.112C62.074 17.9007 61.7903 16.9423 61.223 16.237C60.6557 15.5163 59.935 15.156 59.061 15.156C58.187 15.156 57.428 15.478 56.784 16.122C56.1553 16.7507 55.841 17.755 55.841 19.135ZM75.6228 24.379C74.7641 24.8697 73.6295 25.115 72.2188 25.115C70.4095 25.115 68.9681 24.5707 67.8948 23.482C66.8215 22.3933 66.2848 20.9673 66.2848 19.204C66.2848 17.3333 66.7755 15.869 67.7568 14.811C68.7381 13.7377 69.9878 13.201 71.5058 13.201C72.9931 13.201 74.1738 13.6687 75.0478 14.604C75.9218 15.524 76.3588 16.858 76.3588 18.606C76.3588 19.0813 76.3128 19.5797 76.2208 20.101H68.5618C68.7151 21.113 69.1445 21.8873 69.8498 22.424C70.5551 22.9607 71.4445 23.229 72.5178 23.229C73.7598 23.229 74.7948 22.9377 75.6228 22.355V24.379ZM71.5518 15.064C70.7851 15.064 70.1258 15.3477 69.5738 15.915C69.0218 16.467 68.6768 17.272 68.5388 18.33H74.1738V17.916C74.1431 17.042 73.9055 16.352 73.4608 15.846C73.0161 15.3247 72.3798 15.064 71.5518 15.064ZM88.6498 25H86.3958V17.64C86.3958 16.8273 86.1888 16.2063 85.7748 15.777C85.3761 15.3477 84.8394 15.133 84.1648 15.133C83.3674 15.133 82.6851 15.4473 82.1178 16.076C81.5504 16.6893 81.2668 17.5557 81.2668 18.675V25H79.0128V13.339H81.2668V15.34C81.9568 13.8987 83.1681 13.178 84.9008 13.178C86.0508 13.178 86.9631 13.5307 87.6378 14.236C88.3124 14.9413 88.6498 15.8997 88.6498 17.111V25ZM98.9718 21.78C98.9718 22.8227 98.6038 23.643 97.8678 24.241C97.1318 24.8237 96.1351 25.115 94.8778 25.115C93.4978 25.115 92.3478 24.885 91.4278 24.425V22.286C92.5011 22.9453 93.6128 23.275 94.7628 23.275C95.3608 23.275 95.8208 23.1523 96.1428 22.907C96.4801 22.6617 96.6488 22.3397 96.6488 21.941C96.6488 21.6037 96.5184 21.3047 96.2578 21.044C95.9971 20.768 95.7288 20.5687 95.4528 20.446C95.1921 20.308 94.7398 20.101 94.0958 19.825C92.2711 19.0737 91.3588 17.9697 91.3588 16.513C91.3588 15.4857 91.7421 14.6807 92.5088 14.098C93.2754 13.5153 94.2338 13.224 95.3838 13.224C96.6411 13.224 97.6224 13.3927 98.3278 13.73V15.777C97.5764 15.3323 96.6104 15.11 95.4298 15.11C94.8931 15.11 94.4638 15.2327 94.1418 15.478C93.8351 15.7233 93.6818 16.0453 93.6818 16.444C93.6818 16.5513 93.6894 16.6587 93.7048 16.766C93.7354 16.858 93.7814 16.9577 93.8428 17.065C93.9041 17.157 93.9578 17.2413 94.0038 17.318C94.0651 17.3793 94.1571 17.4483 94.2798 17.525C94.4024 17.6017 94.4944 17.6707 94.5558 17.732C94.6324 17.778 94.7474 17.8393 94.9008 17.916C95.0694 17.9927 95.1921 18.054 95.2688 18.1C95.3454 18.1307 95.4758 18.192 95.6598 18.284C95.8591 18.3607 95.9971 18.4143 96.0738 18.445C96.9784 18.8437 97.6838 19.296 98.1898 19.802C98.7111 20.2927 98.9718 20.952 98.9718 21.78ZM110.01 24.379C109.152 24.8697 108.017 25.115 106.606 25.115C104.797 25.115 103.356 24.5707 102.282 23.482C101.209 22.3933 100.672 20.9673 100.672 19.204C100.672 17.3333 101.163 15.869 102.144 14.811C103.126 13.7377 104.375 13.201 105.893 13.201C107.381 13.201 108.561 13.6687 109.435 14.604C110.309 15.524 110.746 16.858 110.746 18.606C110.746 19.0813 110.7 19.5797 110.608 20.101H102.949C103.103 21.113 103.532 21.8873 104.237 22.424C104.943 22.9607 105.832 23.229 106.905 23.229C108.147 23.229 109.182 22.9377 110.01 22.355V24.379ZM105.939 15.064C105.173 15.064 104.513 15.3477 103.961 15.915C103.409 16.467 103.064 17.272 102.926 18.33H108.561V17.916C108.531 17.042 108.293 16.352 107.848 15.846C107.404 15.3247 106.767 15.064 105.939 15.064Z" fill="#292830"/>
+            </svg>
+
+        </a>
+        <div class="menu">
+            <a href="#" class="menu-link">Features</a>
+            <a href="#" class="menu-link">About us</a>
+            <a href="#" class="menu-link">Pricing</a>
+            <a href="#" class="menu-link">Feedback</a>
+        </div>
+        <a href="#" class="button button-header">Request a demo</a>
+    </header>
+    <!--Header-->
+    <section class="track container">
+        <div class="section-info">
+            <h1 class="track-title title">Track your Expenses & Save Money</h1>
+            <p class="p-description track-description">Helps you to organize your income and expenses</p>
+            <div class="track-button-block">
+                <a href="#" class="button button-track">
+                    <p>Try free demo</p> 
+                    <svg class="arrow-down" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 9.5L12 17.5L20 9.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <p class="track-description-button">— Web, iOS and Android</p>
+            </div>
+        </div>
+        <img class="track-img" src="img/track-img.png" alt="">
+    </section>
+    <!--Track-->
+    <section class="overview">
+        <div class="container">
+            <img class="img-overview" width="1110px" src="img/overview.png" alt="overview">
+        </div>
+    </section>
+    <section class="brands container">
+        <img src="img/facebook.png" alt="facebook" class="brand">
+        <img src="img/google.png" alt="google" class="brand">
+        <img src="img/cocacola.png" alt="cocacola" class="brand">
+        <img src="img/linkedin.png" alt="linkedin" class="brand">
+        <img src="img/samsung.png" alt="samsung" class="brand">
+    </section>
+    <!-- /.overview -->
+    <section class="real-time container">
+        <div class="real-time-wrapper">
+            <div class="section-info">
+            <span class="grey">Alwalys online</span>
+            <h1 class="title real-time-title">Real-time support with cloud</h1>
+            <p class="p-description">
+                Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.
+            </p>
+            <a href="#" class="real-time-link link">
+                <p>Learn more</p>
+                <svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12H20" stroke="#FF7235" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13 5L20 12L13 19" stroke="#FF7235" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <img class="img-height" src="img/real-time-img.png" alt="real-time-img">
+        </div>
+    </section>
+    <!-- /.real-time container -->
+    <section class="save-cost">
+        <div class="save-cost-wrapper container">
+            <img class="img-height" src="img/save-cost-img.png" alt="save-cost-img">
+        <div class="section-info">
+            <span class="grey">free some cost</span>
+            <h1 class="title real-time-title">Save cost for you and family</h1>
+            <p class="p-description">
+                Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.
+            </p>
+            <a href="#" class="real-time-link link">
+                <p>Learn more</p>
+                <svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12H20" stroke="#FF7235" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13 5L20 12L13 19" stroke="#FF7235" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        </div>
+    </section>
+    <!-- /.save-cost container -->
+     <section class="use-anytime">
+        <div class="use-anytime-wrapper container">
+        <div class="section-info">
+            <span class="grey">Use anytime</span>
+            <h1 class="title real-time-title">Use anytime when you need</h1>
+            <p class="p-description">
+                Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.
+            </p>
+            <a href="#" class="real-time-link link">
+                <p>Learn more</p>
+                <svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12H20" stroke="#FF7235" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13 5L20 12L13 19" stroke="#FF7235" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <img class="img-height" src="img/use-anytime-img.png" alt="use-anytime-img">
+        </div>
+    </section>
+    <!-- /.use-anytime container -->
+    <section class="product container">
+        <div class="product-header">
+            <h1 class="title product-title">The Product we work with.</h1>
+            <p class="p-description product-description">Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim aumsan nisi, tincidunt vel. Enim ipsum, at quis ullamcorper eget ut.</p>
+        </div>
+        <!-- /.product-header -->
+        <div class="product-content">
+            <div class="product-cards">
+                <div class="product-card">
+                    <svg class="product-svg" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="32" fill="#FFBD74" fill-opacity="0.05"/>
+                        <path d="M24 26H42V24H24C22.9 24 22 24.9 22 26V37H20V40H34V37H24V26ZM43 28H37C36.45 28 36 28.45 36 29V39C36 39.55 36.45 40 37 40H43C43.55 40 44 39.55 44 39V29C44 28.45 43.55 28 43 28ZM42 37H38V30H42V37Z" fill="#FFBD74"/>
+                    </svg>
+
+                    <h3 class="card-title">Cross platform</h3>
+                    <p class="card-description">Elit esse cillum dolore eu fugiat nulla pariatur</p>
+                </div>
+                <div class="product-card product-shadow">
+                    <svg class="product-svg" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="32" fill="#E2598B" fill-opacity="0.05"/>
+                        <g clip-path="url(#clip0_155:104)">
+                        <path d="M39.35 30.04C39.0141 28.3377 38.0976 26.8049 36.7571 25.7032C35.4165 24.6016 33.7351 23.9996 32 24C29.11 24 26.6 25.64 25.35 28.04C23.8802 28.1988 22.521 28.8952 21.5335 29.9953C20.546 31.0954 19.9998 32.5217 20 34C20 37.31 22.69 40 26 40H39C41.76 40 44 37.76 44 35C44 32.36 41.95 30.22 39.35 30.04ZM39 38H26C23.79 38 22 36.21 22 34C22 31.79 23.79 30 26 30H26.71C27.37 27.69 29.48 26 32 26C35.04 26 37.5 28.46 37.5 31.5V32H39C40.66 32 42 33.34 42 35C42 36.66 40.66 38 39 38Z" fill="#E2598B"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_155:104">
+                        <rect width="24" height="24" fill="white" transform="translate(20 20)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <h3 class="card-title">Cloud server</h3>
+                    <p class="card-description">Elit esse cillum dolore eu fugiat nulla pariatur</p>
+                    <a class="poduct-arrow" href="#">
+                        <svg class="poduct-arrow-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.01 11H4V13H16.01V16L20 12L16.01 8V11Z" fill="#292830"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <svg class="product-svg" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="32" fill="#4D12EE" fill-opacity="0.05"/>
+                        <path d="M38 24.14V22H35V24H31V22H28V24.14C26.28 24.59 25 26.14 25 28V40C25 41.1 25.9 42 27 42H39C40.1 42 41 41.1 41 40V28C41 26.14 39.72 24.59 38 24.14ZM39 40H27V28C27 26.9 27.9 26 29 26H37C38.1 26 39 26.9 39 28V40ZM37.5 32V36H35.5V34H28.5V32H37.5Z" fill="#4D12EE"/>
+                    </svg>
+                    <h3 class="card-title">Pure Javascript</h3>
+                    <p class="card-description">Elit esse cillum dolore eu fugiat nulla pariatur</p>
+                </div>
+            </div>
+            <!-- /.product-cards -->
+        </div>
+        <!-- /.product-content -->
+    </section>
+    <!-- /.product -->
+    <section class="choose-plan">
+        <div class="shoose-plan-wrapper container">
+            <h2 class="choose-plan-title">Choose your flexible plan.</h2>
+            <div class="choose-plan-cards">
+                <div class="choose-plan-card">
+                    <div class="choose-plan-card-content">
+                        <svg class="choose-plan-card-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6H17V4C17 2.89 16.11 2 15 2H9C7.89 2 7 2.89 7 4V6H4C2.89 6 2 6.89 2 8V19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM9 4H15V6H9V4ZM20 19H4V17H20V19ZM20 14H4V8H7V10H9V8H15V10H17V8H20V14Z" fill="#3EC1F3"/>
+                    </svg>
+                    <h4 class="choose-plan-card-title">Starter Plan</h4>
+                    <div class="choose-plan-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99997 16.6698L4.82997 12.4998L3.40997 13.9098L8.99997 19.4998L21 7.49984L19.59 6.08984L8.99997 16.6698Z" fill="#BDBDBD"/>
+                        </svg>
+                        <p class="item-description">Store unlimited data</p>
+                    </div>
+                    <div class="choose-plan-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99997 16.6698L4.82997 12.4998L3.40997 13.9098L8.99997 19.4998L21 7.49984L19.59 6.08984L8.99997 16.6698Z" fill="#BDBDBD"/>
+                        </svg>
+                        <p class="item-description">Export to pdf, xls, csv</p>
+                    </div>
+                    <div class="choose-plan-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99997 16.6698L4.82997 12.4998L3.40997 13.9098L8.99997 19.4998L21 7.49984L19.59 6.08984L8.99997 16.6698Z" fill="#BDBDBD"/>
+                        </svg>
+                        <p class="item-description">Cloud server support</p>
+                    </div>
+                    <p class="price">
+                        <span class="bold-price">
+                            $9.99/
+                        </span>
+                        year
+                    </p>
+                    <p class="price-description">up to 3 user + 1.99 per user</p>
+                    <a href="#" class="button-choose-plan">
+                        <p class="button-choose-plan-description">Get this</p>
+                        <svg class="choose-plan-button-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.01 11H4V13H16.01V16L20 12L16.01 8V11Z" fill="#FF7235"/>
+                        </svg>
+
+                    </a>
+                    </div>
+                </div>
+                <!-- /.choose-plancard -->
+                 <div class="choose-plan-card">
+                    <div class="choose-plan-card-content">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6.00004H17.82C17.93 5.69004 18 5.35004 18 5.00004C18.0011 4.35486 17.7939 3.72657 17.4092 3.20863C17.0245 2.69069 16.4829 2.31077 15.8649 2.12538C15.2469 1.93999 14.5856 1.95903 13.9794 2.17969C13.3731 2.40034 12.8542 2.81081 12.5 3.35004L12 4.02004L11.5 3.34004C10.96 2.54004 10.05 2.00004 9 2.00004C7.34 2.00004 6 3.34004 6 5.00004C6 5.35004 6.07 5.69004 6.18 6.00004H4C2.89 6.00004 2.01 6.89004 2.01 8.00004L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8.00004C22 6.89004 21.11 6.00004 20 6.00004ZM15 4.00004C15.55 4.00004 16 4.45004 16 5.00004C16 5.55004 15.55 6.00004 15 6.00004C14.45 6.00004 14 5.55004 14 5.00004C14 4.45004 14.45 4.00004 15 4.00004ZM9 4.00004C9.55 4.00004 10 4.45004 10 5.00004C10 5.55004 9.55 6.00004 9 6.00004C8.45 6.00004 8 5.55004 8 5.00004C8 4.45004 8.45 4.00004 9 4.00004ZM20 19H4V17H20V19ZM20 14H4V8.00004H9.08L7 10.83L8.62 12L12 7.40004L15.38 12L17 10.83L14.92 8.00004H20V14Z" fill="#FF7235"/>
+                        </svg>
+
+                    <h4 class="choose-plan-card-title">Sliver Plan</h4>
+                    <div class="choose-plan-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99997 16.6698L4.82997 12.4998L3.40997 13.9098L8.99997 19.4998L21 7.49984L19.59 6.08984L8.99997 16.6698Z" fill="#BDBDBD"/>
+                        </svg>
+                        <p class="item-description">Store unlimited data</p>
+                    </div>
+                    <div class="choose-plan-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99997 16.6698L4.82997 12.4998L3.40997 13.9098L8.99997 19.4998L21 7.49984L19.59 6.08984L8.99997 16.6698Z" fill="#BDBDBD"/>
+                        </svg>
+                        <p class="item-description">Export to pdf, xls, csv</p>
+                    </div>
+                    <div class="choose-plan-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99997 16.6698L4.82997 12.4998L3.40997 13.9098L8.99997 19.4998L21 7.49984L19.59 6.08984L8.99997 16.6698Z" fill="#BDBDBD"/>
+                        </svg>
+                        <p class="item-description">Cloud server support</p>
+                    </div>
+                    <p class="price">
+                        <span class="bold-price">
+                            $19.99/
+                        </span>
+                        year
+                    </p>
+                    <p class="price-description">up to 3 user + 1.99 per user</p>
+                    <a href="#" class="active-plan">
+                        <p class="button-choose-plan-description">Get this</p>
+                        <svg class="choose-plan-button-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.01 11H4V13H16.01V16L20 12L16.01 8V11Z" fill="white"/>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+                <!-- /.choose-plancard -->
+                 <div class="choose-plan-card">
+                    <div class="choose-plan-card-content">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2H4C2.89 2 2 2.89 2 4V15C2 16.11 2.89 17 4 17H8V22L12 20L16 22V17H20C21.11 17 22 16.11 22 15V4C22 2.89 21.11 2 20 2ZM20 15H4V13H20V15ZM20 10H4V5C4 4.45 4.45 4 5 4H19C19.55 4 20 4.45 20 5V10Z" fill="#4D12EE"/>
+                        </svg>
+                    <h4 class="choose-plan-card-title">Diamond Plan</h4>
+                    <div class="choose-plan-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99997 16.6698L4.82997 12.4998L3.40997 13.9098L8.99997 19.4998L21 7.49984L19.59 6.08984L8.99997 16.6698Z" fill="#BDBDBD"/>
+                        </svg>
+                        <p class="item-description">Store unlimited data</p>
+                    </div>
+                    <div class="choose-plan-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99997 16.6698L4.82997 12.4998L3.40997 13.9098L8.99997 19.4998L21 7.49984L19.59 6.08984L8.99997 16.6698Z" fill="#BDBDBD"/>
+                        </svg>
+                        <p class="item-description">Export to pdf, xls, csv</p>
+                    </div>
+                    <div class="choose-plan-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99997 16.6698L4.82997 12.4998L3.40997 13.9098L8.99997 19.4998L21 7.49984L19.59 6.08984L8.99997 16.6698Z" fill="#BDBDBD"/>
+                        </svg>
+                        <p class="item-description">Cloud server support</p>
+                    </div>
+                    <p class="price">
+                        <span class="bold-price">
+                            $29.99/
+                        </span>
+                        year
+                    </p>
+                    <p class="price-description">up to 3 user + 1.99 per user</p>
+                    <a href="#" class="button-choose-plan">
+                        <p class="button-choose-plan-description">Get this</p>
+                        <svg class="choose-plan-button-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.01 11H4V13H16.01V16L20 12L16.01 8V11Z" fill="#FF7235"/>
+                        </svg>
+
+                    </a>
+                    </div>
+                </div>
+                <!-- /.choose-plancard -->
+            </div>
+            <!-- /.choose-plan-cards -->
+        </div>
+    </section>
+    <!-- /.choose-plan -->
+    <section class="wishers">
+        <div class="wishers-wrapper container">
+            <h1 class="title-wishers">We have millions of best wishers</h1>
+        </div>
+        <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide slide-1">
+        <div class="slide-content">
+            <p class="text-slider">Eleifend fames amet, fames enim.
+             Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. 
+             Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.
+        </p>
+        <div class="slider-description">
+            <img class="slider-description-img" src="img/slide-image-1.png" alt="avatar-1">
+            <p class="slider-description-text"><span class="span-slider-bold">Cameron Williamson,</span> CEO</p>
+        </div>
+        </div>
+    </div>
+    <div class="swiper-slide slide-2">
+        <div class="slide-content">
+            <p class="text-slider">Eleifend fames amet, fames enim.
+             Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. 
+             Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.
+        </p>
+        <div class="slider-description">
+            <img class="slider-description-img" src="img/slide-image-2.png" alt="avatar-1">
+            <p class="slider-description-text"><span class="span-slider-bold">Cameron Williamson,</span> CEO</p>
+        </div>
+        </div>
+    </div>
+    <div class="swiper-slide slide-3">
+        <div class="slide-content">
+            <p class="text-slider">Eleifend fames amet, fames enim.
+             Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. 
+             Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.
+        </p>
+        <div class="slider-description">
+            <img class="slider-description-img" src="img/slide-image-3.png" alt="avatar-1">
+            <p class="slider-description-text"><span class="span-slider-bold">Cameron Williamson,</span> CEO</p>
+        </div>
+        </div>
+    </div>
+    <div class="swiper-slide slide-4">
+        <div class="slide-content">
+            <p class="text-slider">Eleifend fames amet, fames enim.
+             Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. 
+             Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.
+        </p>
+        <div class="slider-description">
+            <img class="slider-description-img" src="img/slide-image-4.png" alt="avatar-1">
+            <p class="slider-description-text"><span class="span-slider-bold">Cameron Williamson,</span> CEO</p>
+        </div>
+        </div>
+    </div>
+    <div class="swiper-slide slide-5">
+        <div class="slide-content">
+            <p class="text-slider">Eleifend fames amet, fames enim.
+             Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. 
+             Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.
+        </p>
+        <div class="slider-description">
+            <img class="slider-description-img" src="img/slide-image-1.png" alt="avatar-1">
+            <p class="slider-description-text"><span class="span-slider-bold">Cameron Williamson,</span> CEO</p>
+        </div>
+        </div>
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+    </section>
+    <!-- /.wishers -->
+    <section class="downloaded">
+        <h2 class="title-white">20M+ downloaded from 32 diffrent countires</h2>
+        <p class="description-white">Try demo for 7 days with full features.</p>
+        <div class="downloaded-content">
+            <img class="downloaded-img" src="img/downloaded-content-image-1.png" alt="downloaded-content-image-1">
+            <a href="#" class="button-white">
+                <span class="color-orange">Try free demo</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 9L12 17L20 9" stroke="#FF7235" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <img class="downloaded-img" src="img/downloaded-content-image-2.png" alt="downloaded-content-image-2">
+        </div>
+    </section>
+    <!-- /.downloaded -->
+    <footer class="container">
+        <div class="footer">
+            <a href="#" class="link-logo">
+            <svg width="112" height="40" viewBox="0 0 112 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#FF7235"/>
+                <path d="M18.176 26H14.384L18.728 19.904L14.648 13.832H18.536L20.504 17.456L22.688 13.832H26.528L22.16 19.928L26.216 26H22.4L20.36 22.352L18.176 26Z" fill="white"/>
+                <path d="M55.841 29.462H53.587V13.339H55.841V15.133C56.6383 13.8297 57.8343 13.178 59.429 13.178C60.9623 13.178 62.1737 13.7377 63.063 14.857C63.9523 15.961 64.397 17.3717 64.397 19.089C64.397 20.8523 63.937 22.309 63.017 23.459C62.1123 24.5937 60.901 25.161 59.383 25.161C57.8343 25.161 56.6537 24.517 55.841 23.229V29.462ZM55.841 19.135C55.841 20.4843 56.1553 21.4963 56.784 22.171C57.428 22.8457 58.1563 23.183 58.969 23.183C59.8737 23.183 60.6173 22.8303 61.2 22.125C61.7827 21.4043 62.074 20.4 62.074 19.112C62.074 17.9007 61.7903 16.9423 61.223 16.237C60.6557 15.5163 59.935 15.156 59.061 15.156C58.187 15.156 57.428 15.478 56.784 16.122C56.1553 16.7507 55.841 17.755 55.841 19.135ZM75.6228 24.379C74.7641 24.8697 73.6295 25.115 72.2188 25.115C70.4095 25.115 68.9681 24.5707 67.8948 23.482C66.8215 22.3933 66.2848 20.9673 66.2848 19.204C66.2848 17.3333 66.7755 15.869 67.7568 14.811C68.7381 13.7377 69.9878 13.201 71.5058 13.201C72.9931 13.201 74.1738 13.6687 75.0478 14.604C75.9218 15.524 76.3588 16.858 76.3588 18.606C76.3588 19.0813 76.3128 19.5797 76.2208 20.101H68.5618C68.7151 21.113 69.1445 21.8873 69.8498 22.424C70.5551 22.9607 71.4445 23.229 72.5178 23.229C73.7598 23.229 74.7948 22.9377 75.6228 22.355V24.379ZM71.5518 15.064C70.7851 15.064 70.1258 15.3477 69.5738 15.915C69.0218 16.467 68.6768 17.272 68.5388 18.33H74.1738V17.916C74.1431 17.042 73.9055 16.352 73.4608 15.846C73.0161 15.3247 72.3798 15.064 71.5518 15.064ZM88.6498 25H86.3958V17.64C86.3958 16.8273 86.1888 16.2063 85.7748 15.777C85.3761 15.3477 84.8394 15.133 84.1648 15.133C83.3674 15.133 82.6851 15.4473 82.1178 16.076C81.5504 16.6893 81.2668 17.5557 81.2668 18.675V25H79.0128V13.339H81.2668V15.34C81.9568 13.8987 83.1681 13.178 84.9008 13.178C86.0508 13.178 86.9631 13.5307 87.6378 14.236C88.3124 14.9413 88.6498 15.8997 88.6498 17.111V25ZM98.9718 21.78C98.9718 22.8227 98.6038 23.643 97.8678 24.241C97.1318 24.8237 96.1351 25.115 94.8778 25.115C93.4978 25.115 92.3478 24.885 91.4278 24.425V22.286C92.5011 22.9453 93.6128 23.275 94.7628 23.275C95.3608 23.275 95.8208 23.1523 96.1428 22.907C96.4801 22.6617 96.6488 22.3397 96.6488 21.941C96.6488 21.6037 96.5184 21.3047 96.2578 21.044C95.9971 20.768 95.7288 20.5687 95.4528 20.446C95.1921 20.308 94.7398 20.101 94.0958 19.825C92.2711 19.0737 91.3588 17.9697 91.3588 16.513C91.3588 15.4857 91.7421 14.6807 92.5088 14.098C93.2754 13.5153 94.2338 13.224 95.3838 13.224C96.6411 13.224 97.6224 13.3927 98.3278 13.73V15.777C97.5764 15.3323 96.6104 15.11 95.4298 15.11C94.8931 15.11 94.4638 15.2327 94.1418 15.478C93.8351 15.7233 93.6818 16.0453 93.6818 16.444C93.6818 16.5513 93.6894 16.6587 93.7048 16.766C93.7354 16.858 93.7814 16.9577 93.8428 17.065C93.9041 17.157 93.9578 17.2413 94.0038 17.318C94.0651 17.3793 94.1571 17.4483 94.2798 17.525C94.4024 17.6017 94.4944 17.6707 94.5558 17.732C94.6324 17.778 94.7474 17.8393 94.9008 17.916C95.0694 17.9927 95.1921 18.054 95.2688 18.1C95.3454 18.1307 95.4758 18.192 95.6598 18.284C95.8591 18.3607 95.9971 18.4143 96.0738 18.445C96.9784 18.8437 97.6838 19.296 98.1898 19.802C98.7111 20.2927 98.9718 20.952 98.9718 21.78ZM110.01 24.379C109.152 24.8697 108.017 25.115 106.606 25.115C104.797 25.115 103.356 24.5707 102.282 23.482C101.209 22.3933 100.672 20.9673 100.672 19.204C100.672 17.3333 101.163 15.869 102.144 14.811C103.126 13.7377 104.375 13.201 105.893 13.201C107.381 13.201 108.561 13.6687 109.435 14.604C110.309 15.524 110.746 16.858 110.746 18.606C110.746 19.0813 110.7 19.5797 110.608 20.101H102.949C103.103 21.113 103.532 21.8873 104.237 22.424C104.943 22.9607 105.832 23.229 106.905 23.229C108.147 23.229 109.182 22.9377 110.01 22.355V24.379ZM105.939 15.064C105.173 15.064 104.513 15.3477 103.961 15.915C103.409 16.467 103.064 17.272 102.926 18.33H108.561V17.916C108.531 17.042 108.293 16.352 107.848 15.846C107.404 15.3247 106.767 15.064 105.939 15.064Z" fill="#292830"/>
+            </svg>
+            </a>
+            <div class="footer-links">
+                <h4 class="footer-title">Links</h4>
+                <ul>
+                    <a href="#" class="footer-link">
+                        <li>Home</li>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <li>About us</li>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <li>Careers</li>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <li>Pricing</li>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <li>Features</li>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <li>Blog</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <h4 class="footer-title">Legal</h4>
+                <ul>
+                    <a href="#" class="footer-link">
+                        <li>Terms of use</li>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <li>Terms of conditions</li>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <li>Privecy policy</li>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <li>Cookie policy</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-newslater">
+                <h4 class="footer-title">Newsletter</h4>
+                <p class="description-footer">
+                    Over 25000 people have subscribed
+                </p>
+                <div class="footer-input">
+                    <input class="fotter-subscribe-input" type="text" placeholder="Enter your email">
+                    <a href="#" class="button-footer">Subscribe</a>
+                </div>
+                <span class="footer-span">
+                    We don’t sell your email and spam
+                </span>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <div class="copyright-left">
+                <a href="#" class="copyright-item">Privacy & Terms</a>
+                <a href="#" class="copyright-item">Contact Us</a>
+            </div>
+            <div class="copyright-center">
+                <span class="copyright-center-info">Copyright @ 2022 RKovach</span>
+            </div>
+            <div class="copyright-links">
+                <a href="#" class="copyright-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.875 1.25H3.125C2.62772 1.25 2.15081 1.44754 1.79917 1.79917C1.44754 2.15081 1.25 2.62772 1.25 3.125L1.25 16.875C1.25 17.3723 1.44754 17.8492 1.79917 18.2008C2.15081 18.5525 2.62772 18.75 3.125 18.75H8.48633V12.8004H6.02539V10H8.48633V7.86562C8.48633 5.43789 9.93164 4.09687 12.1453 4.09687C13.2055 4.09687 14.3141 4.28594 14.3141 4.28594V6.66875H13.0926C11.8891 6.66875 11.5137 7.41562 11.5137 8.18164V10H14.2004L13.7707 12.8004H11.5137V18.75H16.875C17.3723 18.75 17.8492 18.5525 18.2008 18.2008C18.5525 17.8492 18.75 17.3723 18.75 16.875V3.125C18.75 2.62772 18.5525 2.15081 18.2008 1.79917C17.8492 1.44754 17.3723 1.25 16.875 1.25Z" fill="#292830"/>
+                    </svg>
+                </a>
+                <a href="#" class="copyright-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.875 1.25H3.125C2.08984 1.25 1.25 2.08984 1.25 3.125V16.875C1.25 17.9102 2.08984 18.75 3.125 18.75H16.875C17.9102 18.75 18.75 17.9102 18.75 16.875V3.125C18.75 2.08984 17.9102 1.25 16.875 1.25ZM14.9648 7.45312C14.9727 7.5625 14.9727 7.67578 14.9727 7.78516C14.9727 11.1719 12.3945 15.0742 7.68359 15.0742C6.23047 15.0742 4.88281 14.6523 3.75 13.9258C3.95703 13.9492 4.15625 13.957 4.36719 13.957C5.56641 13.957 6.66797 13.5508 7.54688 12.8633C6.42188 12.8398 5.47656 12.1016 5.15234 11.0859C5.54688 11.1445 5.90234 11.1445 6.30859 11.0391C5.13672 10.8008 4.25781 9.76953 4.25781 8.52344V8.49219C4.59766 8.68359 4.99609 8.80078 5.41406 8.81641C5.06267 8.58267 4.7746 8.26557 4.57557 7.89342C4.37655 7.52127 4.27275 7.10563 4.27344 6.68359C4.27344 6.20703 4.39844 5.76953 4.62109 5.39062C5.88281 6.94531 7.77734 7.96094 9.90234 8.07031C9.53906 6.33203 10.8398 4.92188 12.4023 4.92188C13.1406 4.92188 13.8047 5.23047 14.2734 5.73047C14.8516 5.62109 15.4062 5.40625 15.8984 5.11328C15.707 5.70703 15.3047 6.20703 14.7734 6.52344C15.2891 6.46875 15.7891 6.32422 16.25 6.125C15.9023 6.63672 15.4648 7.08984 14.9648 7.45312Z" fill="#292830"/>
+                    </svg>
+                </a>
+                <a href="#" class="copyright-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 1.25H2.49609C1.80859 1.25 1.25 1.81641 1.25 2.51172V17.4883C1.25 18.1836 1.80859 18.75 2.49609 18.75H17.5C18.1875 18.75 18.75 18.1836 18.75 17.4883V2.51172C18.75 1.81641 18.1875 1.25 17.5 1.25ZM6.53906 16.25H3.94531V7.89844H6.54297V16.25H6.53906ZM5.24219 6.75781C4.41016 6.75781 3.73828 6.08203 3.73828 5.25391C3.73828 4.42578 4.41016 3.75 5.24219 3.75C6.07031 3.75 6.74609 4.42578 6.74609 5.25391C6.74609 6.08594 6.07422 6.75781 5.24219 6.75781ZM16.2617 16.25H13.668V12.1875C13.668 11.2188 13.6484 9.97266 12.3203 9.97266C10.9688 9.97266 10.7617 11.0273 10.7617 12.1172V16.25H8.16797V7.89844H10.6562V9.03906H10.6914C11.0391 8.38281 11.8867 7.69141 13.1484 7.69141C15.7734 7.69141 16.2617 9.42188 16.2617 11.6719V16.25Z" fill="#292830"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
